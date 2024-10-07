@@ -27,6 +27,7 @@ module Cache_Data_Mem_Controller(
     input          hit,
     input          read,
     input          write,
+    
     output         mem_read,
     output         cache_read,
     output         cache_write,

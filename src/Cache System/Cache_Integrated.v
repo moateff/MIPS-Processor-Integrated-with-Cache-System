@@ -23,10 +23,12 @@
 module Cache_Integrated(
     input        clk,            // Clock signal
     input        reset,          // Reset signal
+    
     input        read,
     input        write,
     input [31:0] addr,
     input [31:0] data_in,
+    
     output[31:0] data_out
     );
     

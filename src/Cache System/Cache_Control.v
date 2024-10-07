@@ -26,10 +26,12 @@ module Cache_Control
 )(
     input                                 clk,            // Clock signal
     input                                 reset,          // Reset signal (active high)
+    
     input  [ADDR_WIDTH - 1:0]             addr,           // Address input for cache operations
     input                                 wr_en,          // Write enable signal for cache
     input                                 rd_en,          // Read enable signal for cache (not used in this module)
     input                                 invalid,        // Signal to invalidate a cache block
+    
     output [$clog2(4 * BLOCKS_NUM) - 1:0] block_index,    // Index to select the cache block
     output [1:0]                          word_offset,    // Offset to select a word within a block
     output                                hit             // Cache hit flag

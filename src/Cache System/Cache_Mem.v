@@ -27,11 +27,13 @@ module Cache_Mem
 )(
     input                                 clk,            // Clock signal
     input                                 reset,          // Reset signal (active high)
+    
     input                                 wr_en,           // Write enable signal
     input                                 rd_en,           // Read enable signal
     input  [$clog2(4 * BLOCKS_NUM) - 1:0] block_index,    // Index to select the cache block
     input  [1:0]                          word_offset,    // Offset within a block to select a word
     input  [4 * DATA_WIDTH - 1:0]         data_in,        // 4-word data to write to the cache
+    
     output [DATA_WIDTH - 1:0]             data_out        // Output data (1 word)
     );
 

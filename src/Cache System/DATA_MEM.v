@@ -22,10 +22,12 @@
 module DATA_MEM(
     input              clk,           // Clock signal
     input              reset,         // Asynchronous reset signal (for initializing memory)
+    
     input      [31:0]  addr,          // 32-bit input for memory address
     input      [31:0]  w_data,        // 32-bit input for writing data into memory
     input              wr_en,         // Write enable signal (if high, data is written to memory)
     input              rd_en,         // Read enable signal (if high, data is read from memory)
+    
     output reg [127:0] r_data         // 128-bit block (4 * 32-bit words) output for reading data from memory
 );
     

@@ -27,11 +27,13 @@ module Cache_System
 )(
     input                         clk,            // Clock signal
     input                         reset,          // Reset signal (active high)
+    
     input                         wr_en,          // Write enable signal for the cache
     input                         rd_en,          // Read enable signal for the cache
     input                         invalid,        // Invalidate cache block signal
     input  [ADDR_WIDTH - 1:0]     addr,           // Input address for cache operations
     input  [4 * DATA_WIDTH - 1:0] w_data,         // Write data (4 words of DATA_WIDTH)
+    
     output [DATA_WIDTH - 1:0]     r_data,         // Read data (1 word of DATA_WIDTH)
     output                        hit             // Cache hit flag
     );
