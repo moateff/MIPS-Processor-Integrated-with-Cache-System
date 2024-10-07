@@ -1,0 +1,22 @@
+2009000A  // addi $t1, $zero, 10
+200A0014  // addi $t2, $zero, 20
+200B0028  // addi $t3, $zero, 40
+200C0050  // addi $t4, $zero, 80
+200D00A0  // addi $t5, $zero, 160
+    
+AC090000  // sw $t1, 0($zero)
+AC0A0002  // sw $t2, 2($zero)
+AC0B0008  // sw $t3, 8($zero)
+AC0C000A  // sw $t4, 10($zero)
+AC0D000A  // sw $t5, 10($zero)
+    
+8C080000  // lw $t0, 0($zero)  = 10
+8C090002  // lw $t1, 2($zero)  = 20
+
+AC0B0002  // sw $t3, 2($zero)
+8C090002  // lw $t1, 2($zero)  = 40
+
+8C0A0008  // lw $t2, 8($zero)  = 40
+8C0B000A  // lw $t3, 10($zero) = 160
+    
+AC0C000C  // sw $t4, 12($zero)
