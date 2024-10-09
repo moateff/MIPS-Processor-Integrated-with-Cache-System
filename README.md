@@ -1,4 +1,4 @@
-# MIPS Processor with Integrated Cache System
+# Single cycle MIPS Processor Integrated with Cache System
 
 This project demonstrates the integration of a direct-mapped cache system with a MIPS processor. The cache is designed to optimize memory access by reducing latency and improving spatial locality through a block-based architecture. It employs a write-back strategy to further enhance memory performance and reduce traffic.
 
