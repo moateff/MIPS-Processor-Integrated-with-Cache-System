@@ -18,9 +18,9 @@ This project demonstrates the integration of a direct-mapped cache system with a
 ## Project Structure
 
 - `src/`: Contains the Verilog files for the MIPS processor and cache system design.
-- `testbenches/`: Contains testbenches for validating the cache functionality and processor integration.
-- `simulations/`: Results from the simulations showing the cache performance.
-- `programs/`: Simple MIPS assembly programs used to test and verify the cache system.
+- `testbench/`: Contains testbenches for validating the cache functionality and processor integration.
+- `sim/`: Results from the simulations showing the cache performance.
+- `program/`: Simple MIPS assembly program used to test and verify the cache system.
 
 ## Requirements
 
